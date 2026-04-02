@@ -473,9 +473,7 @@ const LOGO_BASE_HEIGHT = 320;
 const LOGO_FALLBACK_ASPECT_RATIO = 2.5;
 const LOGO_MIN_WIDTH = 360;
 const LOGO_MAX_WIDTH = 3000;
-const LOGO_BADGE_BOOST_ASPECT_RATIO_THRESHOLD = 4.25;
-const LOGO_BADGE_BOOST_PER_ASPECT_POINT = 0.14;
-const LOGO_BADGE_BOOST_MAX_SCALE = 1.45;
+
 
 const buildProviderMonogram = (label: string) => {
   const cleaned = label.replace(/[^A-Za-z0-9]+/g, ' ').trim();
@@ -6580,20 +6578,7 @@ export async function GET(
       const usePosterBadgeLayout = type === 'poster';
       const useBackdropBadgeLayout = type === 'backdrop' || type === 'thumbnail';
       const useLogoBadgeLayout = type === 'logo';
-      const logoAspectRatioForBadgeSizing = useLogoBadgeLayout
-        ? Math.max(
-          LOGO_FALLBACK_ASPECT_RATIO,
-          selectedLogoAspectRatio || rawFallbackLogoAspectRatio || LOGO_FALLBACK_ASPECT_RATIO
-        )
-        : LOGO_FALLBACK_ASPECT_RATIO;
-      const logoBadgeScale = useLogoBadgeLayout
-        ? Math.min(
-          LOGO_BADGE_BOOST_MAX_SCALE,
-          1 +
-          Math.max(0, logoAspectRatioForBadgeSizing - LOGO_BADGE_BOOST_ASPECT_RATIO_THRESHOLD) *
-          LOGO_BADGE_BOOST_PER_ASPECT_POINT
-        )
-        : 1;
+const logoBadgeScale = 1;
       const usePosterRowLayout =
         usePosterBadgeLayout &&
         (posterRatingsLayout === 'top' ||
@@ -6758,11 +6743,11 @@ export async function GET(
           badgeGap = Math.max(badgeGap, 12);
         }
       } else if (useLogoBadgeLayout) {
-        badgeIconSize = Math.round(92 * logoBadgeScale);
-        badgeFontSize = Math.round(68 * logoBadgeScale);
-        badgePaddingY = Math.max(6, Math.round(6 * logoBadgeScale));
-        badgePaddingX = Math.round(38 * logoBadgeScale);
-        badgeGap = Math.round(22 * logoBadgeScale);
+        badgeIconSize = 84;
+        badgeFontSize = 62;
+        badgePaddingY = 8;
+        badgePaddingX = 32;
+        badgeGap = 20;
       }
 
       if (usePosterBadgeLayout && cappedRatingBadges.length > 0) {
