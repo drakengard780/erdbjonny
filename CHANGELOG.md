@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented in this file.
 
+## [0.3.11](https://github.com/realbestia1/erdb/compare/v0.3.10...v0.3.11) - 2026-04-03
+
+- build error fix ([e56d637](https://github.com/realbestia1/erdb/commit/e56d6373eb0de46eb389c864aa1db41523b76cec))
+
 ## [0.3.10](https://github.com/realbestia1/erdb/compare/v0.3.9...v0.3.10) - 2026-04-03
 
 - fix(poster): rename original to default and fix localized alternative poster selection txt ([ba39b41](https://github.com/realbestia1/erdb/commit/ba39b414dade7fb628128d9f84dc9e371c1c8fad))
