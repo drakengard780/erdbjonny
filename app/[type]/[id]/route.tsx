@@ -2054,8 +2054,8 @@ const pickPosterByPreference = (
   }
 
   return (
-    pickByLanguageWithFallback(alternativePosters, preferredLang, null) ||
-    pickByLanguageWithFallback(alternativePosters, fallbackLang, null) ||
+    pickByLanguageWithFallback(alternativePosters, preferredLang, '') ||
+    pickByLanguageWithFallback(alternativePosters, fallbackLang, '') ||
     alternativePosters[0] ||
     fallbackOriginal
   );
@@ -2092,7 +2092,7 @@ const pickBackdropByPreference = (
     );
   }
 
-  if (preference === 'original') {
+  if (preference === 'default') {
     return fallbackOriginal;
   }
 
