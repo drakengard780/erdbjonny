@@ -11,12 +11,16 @@ ERDB generates poster/backdrop/logo/thumbnail images with dynamic ratings on-the
 
 ## Examples
 
+### Posters
+
 <p align="center">
   <img src="./assets/poster1.webp" alt="ERDB poster example 1" width="24%" />
   <img src="./assets/poster2.webp" alt="ERDB poster example 2" width="24%" />
   <img src="./assets/poster3.webp" alt="ERDB poster example 3" width="24%" />
   <img src="./assets/poster4.webp" alt="ERDB poster example 4" width="24%" />
 </p>
+
+### Backdrops
 
 <p align="center">
   <img src="./assets/backdrop1.webp" alt="ERDB backdrop example 1" width="24%" />
@@ -25,14 +29,23 @@ ERDB generates poster/backdrop/logo/thumbnail images with dynamic ratings on-the
   <img src="./assets/backdrop4.webp" alt="ERDB backdrop example 4" width="24%" />
 </p>
 
+### Logos
+
 <p align="center">
   <img src="./assets/logo.png" alt="ERDB logo example" width="49%" />
-  <img src="./assets/thumbnail.webp" alt="ERDB thumbnail example" width="49%" />
 </p>
+
+### Custom Logos
 
 <p align="center">
   <img src="./assets/custom-logo.png" alt="ERDB custom logo example 1" width="49%" />
   <img src="./assets/custom-logo2.png" alt="ERDB custom logo example 2" width="49%" />
+</p>
+
+### Thumbnails
+
+<p align="center">
+  <img src="./assets/thumbnail.webp" alt="ERDB thumbnail example" width="49%" />
 </p>
 
 <details>
