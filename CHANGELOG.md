@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented in this file.
 
+## [0.3.15](https://github.com/realbestia1/erdb/compare/v0.3.14...v0.3.15) - 2026-04-04
+
+- Add Filmweb user and critics rating providers with automatic IMDb/TMDB mapping fallback
+  - add `filmweb` and `filmwebcritics` to the rating provider catalog and configurator/docs lists
+  - resolve Filmweb IDs from IMDb/TMDB via Wikidata first, then fall back to cached title/year search
+  - fetch Filmweb user ratings from `/api/v1/film/{id}/rating` and critics ratings from `/api/v1/film/{id}/critics/rating`
+  - cache Filmweb mapping, search, and rating responses in metadata cache with dedicated TTL handling
+  - wire Filmweb providers into poster, backdrop, and logo rendering flows
+
 ## [0.3.14](https://github.com/realbestia1/erdb/compare/v0.3.13...v0.3.14) - 2026-04-04
 
 - fix(backdrop): prefer native-language backdrop over clean fallback for original language mode ([2420d44](https://github.com/realbestia1/erdb/commit/2420d44c58baa1406856f4a69bc62de16c2c5807))
