@@ -30,6 +30,11 @@ ERDB generates poster/backdrop/logo/thumbnail images with dynamic ratings on-the
   <img src="./assets/thumbnail.webp" alt="ERDB thumbnail example" width="49%" />
 </p>
 
+<p align="center">
+  <img src="./assets/custom-logo.png" alt="ERDB custom logo example 1" width="49%" />
+  <img src="./assets/custom-logo2.png" alt="ERDB custom logo example 2" width="49%" />
+</p>
+
 <details>
 <summary>Click to view Self-Hosting Instructions (Docker / Local)</summary>
 
